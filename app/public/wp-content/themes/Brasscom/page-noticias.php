@@ -1,4 +1,12 @@
-<?php get_header();
+<?php
+
+/**
+ * 
+ * Template Name: Noticias
+ * 
+ */
+
+get_header();
 
 // dd($post);
 
@@ -15,7 +23,7 @@ $i = 0;
   </div>
 
   <div class="div-noticias container pt-5">
-    <h1 class="font55 fontWeight-300 text-center">Notícias</h1>
+    <h1 class="font55 fontWeight-300 text-center"><?php the_title(); ?></h1>
 
     <?php foreach ($categories as $category) {
     ?>

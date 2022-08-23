@@ -187,6 +187,7 @@ header {
   .bottom-nav {
     height: 38px;
     background-color: $azul-medio;
+    filter: drop-shadow(0px 4px 20px rgba(16, 49, 65, 0.42));
 
     .contato {
       height: 100%;
@@ -214,6 +215,7 @@ header {
   }
 
   .menu-item-has-children {
+    z-index: 1600;
     @media (min-width: 1170px) {
       position: relative;
       display: flex;
@@ -254,7 +256,7 @@ header {
               line-height: 45px;
               height: 100%;
               border-radius: 5px;
-              padding: 0 20px;
+              padding: 10px 20px;
 
               &:hover {
                 background: rgba(40, 140, 203, 0.4);

@@ -245,7 +245,7 @@
 
         <div class="d-none d-sm-flex justify-content-between align-items-center gap-4 h-100">
 
-          <a href="" class="fontWeight-500 contato font14" target="_blank">Contato</a>
+          <a href="<?php echo home_url('Contato'); ?>" class="fontWeight-500 contato font14" target="_blank">Contato</a>
 
           <?php if (get_o2option('o2_youtube')) { ?>
             <a href="<?php echo_o2option('o2_youtube'); ?>" target="_blank">
