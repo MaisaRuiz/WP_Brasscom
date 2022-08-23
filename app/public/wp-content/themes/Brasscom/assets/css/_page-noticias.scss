@@ -1,0 +1,17 @@
+.pg-noticias {
+  padding-bottom: 20px;
+  
+
+  .div-noticias {
+    color: $azul-escuro;
+
+    .link-saibamais {
+      text-decoration: none;
+      color: $azul-escuro;
+    }
+
+    .card {
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+footer {
+  .footer-white {
+    padding: 30px 30px 37px 30px;
+    .separa-footer {
+    }
+    hr {
+      width: 100%;
+      color: $azul-medio;
+      opacity: 1;
+    }
+    .widget {
+      ul {
+        list-style: none;
+        padding-left: 0px;
+        li {
+          a {
+            font-weight: 400;
+            // font-size: 13px;
+            line-height: 161%;
+            text-decoration: none;
+            color: $azul-medio;
+            &:hover {
+              text-decoration: underline;
+              color: $azul-claro;
+              transition: 0.5s ease-in-out;
+            }
+          }
+        }
+      }
+      .menu {
+        @media (min-width: 576px) {
+          display: block;
+        }
+      }
+
+      @media (max-width: 575.9px) {
+        margin: auto;
+        width: 95%;
+        border-bottom: 1.1px solid rgba(45, 100, 125, 0.2);
+        .menu {
+          display: none;
+        }
+        .widget-title {
+          margin: 0px;
+          display: flex;
+          align-items: center;
+          height: 55px;
+          position: relative;
+          padding-left: 30px;
+
+          &::before {
+            transition: all 0.5s ease-in-out;
+            content: "";
+            border: 2px solid $azul-medio;
+            border-top: transparent;
+            border-left: transparent;
+            width: 10px;
+            height: 10px;
+            transform: rotate(45deg);
+            position: absolute;
+            left: 0px;
+            top: 20px;
+          }
+          &.active {
+            &::before {
+              transform: rotate(-135deg) translate(-7px);
+              transition: all 0.5s ease-in-out;
+            }
+          }
+        }
+        .widget {
+          ul {
+            li {
+              height: 55px;
+            }
+          }
+        }
+      }
+    }
+    .widget-title {
+      font-size: 17px;
+      color: $azul-escuro;
+    }
+    .botoes-footer {
+      justify-content: center;
+
+      @media (min-width: 1200px) {
+        justify-content: end;
+      }
+    }
+    .copyright {
+      // font-size: 13px;
+      line-height: 31px;
+      color: $cinza;
+      text-align: center;
+
+      @media (max-width: 768px) {
+        margin-top: 30px;
+      }
+
+      @media (min-width: 1200px) {
+        text-align: start;
+      }
+    }
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+  }
+
+  .footer-blue {
+    min-height: 50px;
+    background-color: $azul-escuro;
+    p {
+      color: $branco;
+      // font-size: 13px;
+      line-height: 31px;
+      a {
+        text-decoration: none;
+        color: $branco;
+        margin: 0 10px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

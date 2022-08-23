@@ -1,0 +1,30 @@
+//aqui são definidas as cores de acordo com o layout, que serão usadas com frequencia
+$azul-escuro: #1e465a;
+$azul-medio: #2d647d;
+$azul-claro: #288ccb;
+$branco: #fff;
+$preto: #000;
+$amarelo-forte: #ddff15;
+$cinza: #868686;
+$offwhite: #f3f3f3;
+
+////////////////////////// flexCenter
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//exemplo de uso do flexCenter:
+// .botao{
+//   @include flexCenter;
+// }
+//////////////////////////
+
+
+
+//Z-INDEX QUE USEI
+
+// .img-noticia {
+//   z-index: -100;
+// }

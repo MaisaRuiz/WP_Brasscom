@@ -1,0 +1,52 @@
+.btn-blue {
+  @include flexCenter;
+  gap: 20px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  background-color: $azul-medio;
+  border-radius: 100px;
+  text-decoration: none;
+  color: $branco;
+  &:hover {
+    color: $branco;
+    background-color: $azul-claro;
+    transition: ease-in-out 0.5s;
+  }
+}
+
+.div-acinzentada {
+  min-height: 80px;
+  background-image: linear-gradient($cinza, $offwhite);
+  color: $cinza;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  a {
+    color: $cinza;
+    text-decoration: none;
+    @media (min-width: 576px) {
+      font-size: 18px;
+    }
+    @media (max-width: 575.9px) {
+      font-size: 14px;
+    }
+    @media (min-width: 1200px) {
+      margin: auto 10px;
+    }
+
+    &:hover {
+      color: $cinza;
+      text-decoration: none;
+    }
+  }
+}
+
+/* COLORS FONTS*/
+// .cor-black000000 {
+//   color: #000000;
+// }
+
+/* WIDTH BOTÕES */
+.btn-257 {
+  width: 257px;
+}

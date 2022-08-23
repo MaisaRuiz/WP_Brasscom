@@ -1,0 +1,60 @@
+// o valor dentro da função é o tamanho em pixel, mas é exibido em rem
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}
+html {
+  font-size: 16px;
+  color: $preto;
+}
+
+.font13 {
+  font-size: toRem(13);
+}
+.font14 {
+  font-size: toRem(14);
+}
+.font15 {
+  font-size: toRem(15);
+}
+.font17 {
+  font-size: toRem(17);
+}
+.font18 {
+  font-size: toRem(18);
+}
+.font20 {
+  font-size: toRem(20);
+}
+.font24 {
+  font-size: toRem(24);
+}
+.font26 {
+  font-size: toRem(26);
+}
+.font34 {
+  font-size: toRem(34);
+}
+.font36 {
+  font-size: toRem(36);
+}
+.font50 {
+  font-size: toRem(50);
+}
+.font52 {
+  font-size: toRem(52);
+}
+.font55 {
+  font-size: toRem(55);
+}
+
+/* ESPESSURA LETRAS */
+.fontWeight-300 {
+  font-weight: 300;
+}
+.fontWeight-400 {
+  font-weight: 400;
+}
+.fontWeight-500 {
+  font-weight: 500;
+}

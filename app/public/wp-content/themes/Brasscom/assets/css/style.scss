@@ -1,0 +1,36 @@
+/*!
+Theme Name: Brasscom
+Author: OxigenWeb
+Author URI: http://www.oxigenweb.com.br/
+Description: A Brasscom atua desde 2004, representando a transformação digital do país, a inovação e a economia digital. 
+Version: 1.0
+*/
+
+@import "base/variaveis"; //deve ser importado antes de tudo
+@import "base/normalize"; //não precisa editar nada
+
+@import "base/base";
+@import "base/tipografia";
+
+// Google Fonts - Roboto
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  outline: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+@import "header";
+// @import "index";
+// @import "contato";
+@import "single-noticias";
+@import "page-noticias";
+@import "footer";
+// @import "404";
+
+.border-red {
+  border: 1px solid red;
+}

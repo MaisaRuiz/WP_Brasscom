@@ -1,0 +1,90 @@
+.single-noticias {
+  .bg-img {
+    height: 519px;
+    background: linear-gradient(90deg, rgba(30, 70, 90, 0.8) -0.99%, rgba(30, 70, 90, 0) 130.49%);
+  }
+
+  .img-noticia {
+    z-index: -100;
+  }
+
+  .title-date {
+    height: 60%;
+    width: 80%;
+
+    @media (max-width: 575.9px) {
+      align-items: center !important;
+    }
+
+    p {
+      height: 38px;
+      width: 106px;
+      background: $azul-medio;
+      border-radius: 100px;
+    }
+
+    h1 {
+      @media (max-width: 767.9px) {
+        font-size: 35px;
+      }
+      @media (max-width: 575.9px) {
+        text-align: center;
+      }
+    }
+  }
+
+  .autor {
+    color: $azul-escuro;
+  }
+
+  .area-noticia {
+    @media (min-width: 1200px) {
+      padding-right: 80px;
+    }
+
+    h2,
+    p {
+      color: $azul-escuro;
+    }
+    h2 {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 33px;
+      margin-bottom: 30px;
+    }
+    p {
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+
+  .vejaTambem {
+    line-height: 41px;
+    color: $azul-escuro;
+  }
+
+  .link-vejatambem {
+    text-decoration: none;
+    color: $azul-escuro;
+
+    .resumo {
+      p {
+        line-height: 26px;
+      }
+    }
+  }
+
+  hr {
+    border: 1.1px solid rgba(45, 100, 125, 0.2);
+    margin: 30px auto;
+  }
+
+  .div-acinzentada {
+    a:nth-last-of-type(1) {
+      @media (max-width: 575.9px) {
+        display: none;
+      }
+    }
+  }
+}
