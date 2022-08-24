@@ -22,6 +22,7 @@
   padding-right: 30px;
 
   a {
+    transition: all 0.5s ease-in-out;
     color: $cinza;
     text-decoration: none;
     @media (min-width: 576px) {
@@ -35,8 +36,9 @@
     }
 
     &:hover {
-      color: $cinza;
-      text-decoration: none;
+      transition: all 0.5s ease-in-out;
+      text-decoration: underline;
+      color: $azul-claro;
     }
   }
 }

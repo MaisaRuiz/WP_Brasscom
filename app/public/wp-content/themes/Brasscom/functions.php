@@ -23,6 +23,7 @@ add_filter('use_block_editor_for_post', '__return_false');
 
 //pasta que está localizado o cpt do custom_post
 require_once get_template_directory() . '/app/theme-options.php';
+require_once get_template_directory() . '/app/ctp-contato.php';
 
 
 
@@ -172,5 +173,3 @@ add_filter('excerpt_length', 'wpdocs_custom_excerpt_length');
 
 //Adiciona o campo de resumo para PÁGINAS, mas nesse site nem vai usar.
 // add_post_type_support('page', 'excerpt');
-
-

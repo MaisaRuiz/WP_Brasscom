@@ -150,6 +150,22 @@
 </script>
 
 
+<!-- BOTÕES/CIDADE DA PAGE-CONTATO -->
+<script>
+  jQuery(document).ready(function() {
+    jQuery(function() {
+      jQuery('.btnCidade').on('click', function() {
+
+        jQuery('.inf-cidade').toggleClass('d-none');
+        jQuery('.btnCidade').toggleClass('ativo');
+        jQuery('.mais').toggleClass('d-none');
+        jQuery('.iframe').toggleClass('d-none');
+
+      });
+    });
+  });
+</script>
+
 
 </body>
 

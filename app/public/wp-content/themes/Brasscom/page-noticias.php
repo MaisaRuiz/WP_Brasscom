@@ -19,7 +19,7 @@ $i = 0;
 <main class="pg-noticias">
 
   <div class="div-acinzentada fontWeight-400 font18 d-flex justify-content-center align-items-center">
-    <p class=""><a href="<?php echo home_url(); ?>">Home</a> &gt; <a href="<?php echo home_url('Noticias'); ?>">Notícias</a></p>
+    <p class=""><a href="<?php echo home_url(); ?>">Home</a> &gt; <a href="<?php echo home_url('Noticias'); ?>"><?php the_title(); ?></a></p>
   </div>
 
   <div class="div-noticias container pt-5">

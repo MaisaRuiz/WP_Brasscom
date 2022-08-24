@@ -1,16 +1,37 @@
 .pg-contato {
+  .div-contato {
+    h2 {
+      color: $azul-medio;
+    }
+    .campo-form {
+      label {
+        width: 100%;
+      }
+      .form-control {
+        border-radius: 5px;
+      }
+    }
+    .icones-RS {
+      max-width: 95%;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
   .div-iframe {
     min-height: 923px;
     background-color: $azul-escuro;
-    padding: 90px;
+    padding: 100px 100px 103px 123px;
 
     .iframe {
       width: 698px;
       height: 621px;
+      filter: drop-shadow(0px 10px 30px rgba(30, 70, 90, 0.25));
+      border-radius: 5px;
     }
 
     .inf-cidade {
-      padding-left: 70px;
+      padding-left: 50px;
       p {
         font-weight: 300;
         font-size: 18px;
@@ -24,35 +45,8 @@
       }
     }
 
-    .btnAzul-cidade {
-      text-align: start;
-      padding-left: 30px;
-      position: relative;
-      border-radius: 5px;
-      border: none;
-      height: 74px;
-      width: 507px;
-      background-color: $azul-claro;
-      color: $branco;
-      font-weight: 500;
-      font-size: 26px;
-      line-height: 30px;
-      &::after {
-        // transition: all 0.5s ease-in-out;
-        content: "";
-        border: 2px solid $branco;
-        border-top: transparent;
-        border-left: transparent;
-        width: 10px;
-        height: 10px;
-        transform: rotate(-45deg);
-        position: absolute;
-        right: 30px;
-        top: 32px;
-      }
-    }
-
-    .btnAmarelo-cidade {
+    .btnAmarelo {
+      z-index: 500;
       text-align: start;
       padding-left: 30px;
       position: relative;
@@ -65,22 +59,62 @@
       font-weight: 300;
       font-size: 26px;
       line-height: 30px;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        transition: all 0.5s ease-in-out;
+        background-color: $amarelo-forte;
+        color: $azul-escuro;
+
+        .mais {
+          span {
+            transition: all 0.5s ease-in-out;
+            background-color: $azul-escuro;
+          }
+        }
+      }
 
       .mais {
         position: absolute;
         right: 30px;
         top: 34px;
         span {
+          transition: all 0.5s ease-in-out;
           display: block;
           width: 18px;
           height: 2px;
           background-color: $amarelo-forte;
-          transition: all 0.5s ease-in-out;
-        }
-        .traco1 {
         }
         .traco2 {
           transform: rotate(90deg) translate(-2px);
+        }
+      }
+
+      &.ativo {
+        text-align: start;
+        padding-left: 30px;
+        position: relative;
+        border-radius: 5px;
+        border: none;
+        height: 74px;
+        width: 507px;
+        background-color: $azul-claro;
+        color: $branco;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 30px;
+        &::after {
+          // transition: all 0.5s ease-in-out;
+          content: "";
+          border: 2px solid $branco;
+          border-top: transparent;
+          border-left: transparent;
+          width: 10px;
+          height: 10px;
+          transform: rotate(-45deg);
+          position: absolute;
+          right: 30px;
+          top: 32px;
         }
       }
     }
