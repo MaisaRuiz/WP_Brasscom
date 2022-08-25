@@ -167,6 +167,38 @@
 </script>
 
 
+
+<!-- ANIMAÇÃO DO LABEL NO FORM -->
+<!-- <script>
+  jQuery(document).ready(function() {
+    jQuery(function() {
+      jQuery('.form-control').on('click', function() {
+
+        if (jQuery(this).val() == '') {
+          jQuery(this).parents('.label').removeClass('active');
+        } else {
+          jQuery(this).parents('.label').addClass('active');
+        }
+      }).on('change', function() {
+        if (jQuery(this).val() == '') {
+          jQuery(this).parents('.label').removeClass('active');
+        } else {
+          jQuery(this).parents('.label').addClass('active');
+        }
+      }).on('focus', function() {
+        jQuery(this).parents('.label').addClass('active').addClass('focus');
+      }).on('focusout', function() {
+        jQuery(this).parents('.label').removeClass('focus');
+        if (jQuery(this).val() == '') {
+          jQuery(this).parents('.label').removeClass('active');
+        }
+      });
+
+    });
+  });
+</script> -->
+
+
 </body>
 
 </html>

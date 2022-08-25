@@ -14,7 +14,7 @@ get_header(); ?>
   </div>
 
   <div class="div-contato container pt-5">
-    <h1 class="font55 fontWeight-300 text-center"><?php the_title(); ?></h1>
+    <h1 class="font55 fontWeight-300 text-center mb-4 pb-1"><?php the_title(); ?></h1>
 
     <div class="row d-flex justify-content-between">
       <div class="col-6">
@@ -28,10 +28,10 @@ get_header(); ?>
 
       </div>
 
-      <div class="col-5">
+      <div class="col-5 colunaContatos">
 
-        <div>
-          <h2 class="font24 fontWeight-400">Secretariado e Conformidade</h2>
+        <div class="mb-5 pb-2">
+          <h2 class="font24 mb-3 fontWeight-400">Secretariado e Conformidade</h2>
 
           <!-- E-MAIL DO SECRETARIADO -->
           <?php if (get_post_meta($post->ID, 'email_secretariado', true)) { ?>
@@ -45,11 +45,11 @@ get_header(); ?>
 
         </div>
 
-        <div>
-          <h2 class="font24 fontWeight-400">Comunicação</h2>
+        <div class="mb-5 pb-2">
+          <h2 class="font24 mb-3 fontWeight-400">Comunicação</h2>
 
           <!-- ICONES DAS REDES SOCIAIS -->
-          <div class="icones-RS d-flex justify-content-between">
+          <div class="icones-RS d-flex justify-content-between mb-3">
             <?php if (get_o2option('o2_youtube')) { ?>
               <a href="<?php echo_o2option('o2_youtube'); ?>" target="_blank">
                 <svg width="29.25" height="20.48" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -125,19 +125,19 @@ get_header(); ?>
 
         </div>
 
-        <div>
-          <h2 class="font24 fontWeight-400">Assessoria de Imprensa</h2>
+        <div class="mb-5 pb-2">
+          <h2 class="font24 mb-3 fontWeight-400">Assessoria de Imprensa</h2>
 
           <!-- NOMDE DE CONTATO DA ASSESSORIA -->
           <?php if (get_post_meta($post->ID, 'nome_contato_assessoria', true)) { ?>
-            <p>
+            <p class="nomeDoContato">
               <?php echo $nome_contato_assessoria = get_post_meta($post->ID, 'nome_contato_assessoria', true); ?>
             </p>
           <?php } ?>
 
           <!-- TELEFONES DA ASSESSORIA -->
           <?php if (get_post_meta($post->ID, 'telefone1_assessoria', true) || get_post_meta($post->ID, 'telefone2_assessoria', true)) { ?>
-            <div class="d-flex gap-2">
+            <div class="d-flex gap-2 mb-2">
               <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.9232 3.07252C13.8237 -1.027 7.17364 -1.02276 3.07411 3.07677C-1.02541 7.1763 -1.02541 13.8264 3.07836 17.9259C7.18213 22.0254 13.8279 22.0254 17.9275 17.9216C19.8966 15.9525 21.0042 13.2789 21 10.495C21 7.71102 19.8924 5.04166 17.9232 3.07252ZM15.9032 14.6242L15.3727 15.1547C14.6852 15.8507 13.6837 16.1392 12.7288 15.9101C11.7697 15.6512 10.8573 15.2438 10.0255 14.7006C9.25311 14.2083 8.54015 13.6311 7.89509 12.9818C7.30095 12.3919 6.76623 11.7469 6.30366 11.0509C5.7944 10.304 5.39124 9.48918 5.1069 8.62768C4.78013 7.61765 5.05173 6.51002 5.80713 5.76735L6.43097 5.14351C6.60497 4.96951 6.88506 4.96951 7.05906 5.14351L9.02394 7.10839C9.19794 7.28239 9.19794 7.56248 9.02394 7.73648L7.86962 8.8908C7.53861 9.21757 7.49617 9.73956 7.77202 10.1173C8.18791 10.6902 8.65049 11.2291 9.1555 11.7299C9.71568 12.2943 10.3268 12.8036 10.9761 13.2577C11.3538 13.5208 11.8631 13.4741 12.1856 13.1516L13.3017 12.0185C13.4757 11.8445 13.7558 11.8445 13.9298 12.0185L15.8989 13.9919C16.0772 14.1701 16.0772 14.4502 15.9032 14.6242C15.9032 14.6284 15.9032 14.6284 15.9032 14.6242Z" fill="#1E465A" />
               </svg>

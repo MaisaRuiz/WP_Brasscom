@@ -1,20 +1,120 @@
 .pg-contato {
   .div-contato {
+    padding-bottom: 90px;
     h2 {
       color: $azul-medio;
     }
-    .campo-form {
+
+    .form-group {
+      position: relative;
       label {
-        width: 100%;
+        position: absolute;
+        z-index: 2;
+        top: 10px;
+        left: 30px;
+
+        width: fit-content;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 27px;
+        color: $azul-escuro;
+
+        // &.active {
+        //   position: absolute !important;
+        //   font-weight: 500;
+        //   font-size: 15px;
+        //   line-height: 27px;
+        //   color: #b6c9d2;
+
+        //   background: white;
+        //   padding: 0px 5px;
+        //   top: -8px;
+        // }
       }
+
       .form-control {
         border-radius: 5px;
       }
+
+      input {
+        height: 50px;
+      }
+      input,
+      textarea {
+        position: relative;
+        z-index: 1;
+        background-color: transparent;
+        padding-left: 20px;
+        border: #b6c9d2 2px solid;
+        &:focus {
+          box-shadow: none;
+        }
+      }
     }
+
+    //botão submit do form
+    .botao {
+      display: flex;
+      justify-content: end;
+
+      .wpcf7-spinner {
+        display: none;
+      }
+
+      .btn-fale-conosco {
+        border: none;
+        height: 50px;
+        width: 352px;
+        background: $amarelo-forte;
+        border-radius: 5px;
+
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 18px;
+        color: $azul-escuro;
+      }
+    }
+
+    //CAMPO DO TERMO DE ACEITE REFERENTE A POLÍTICA DE PRIVACIDADE
+    .campo_checkbox {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    .termo_aceite {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 21px;
+      color: $azul-escuro;
+      .p_privacidade {
+        text-decoration-line: underline;
+        color: $azul-claro;
+      }
+    }
+    //CHECKBOX
+    .check_pprivacidade {
+      width: 26px;
+      height: 26px;
+      margin-right: 15px;
+      margin-left: -15px;
+    }
+
     .icones-RS {
       max-width: 95%;
       a {
         text-decoration: none;
+      }
+    }
+    .colunaContatos {
+      p {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 27px;
+        color: $azul-escuro;
+      }
+      .nomeDoContato {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 27px;
       }
     }
   }
