@@ -1,0 +1,26 @@
+.pg-search {
+  padding: 20px;
+
+  hr {
+    color: transparent;
+    border-bottom: 1.5px solid #c4c4c4;
+  }
+
+  .quant_busca,
+  h1 {
+    color: $azul-escuro;
+  }
+
+  .div-buscas-encontradas {
+    color: $azul-escuro;
+
+    .link-saibamais {
+      text-decoration: none;
+      color: $azul-escuro;
+    }
+
+    .card {
+      border: none;
+    }
+  }
+}
