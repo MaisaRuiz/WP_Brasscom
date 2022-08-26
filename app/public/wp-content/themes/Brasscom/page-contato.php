@@ -13,13 +13,13 @@ get_header(); ?>
     <p class=""><a href="<?php echo home_url(); ?>">Home</a> &gt; <a href="<?php echo home_url('Noticias'); ?>"><?php the_title(); ?></a></p>
   </div>
 
-  <div class="div-contato container pt-5">
+  <div class="div-contato container-md pt-5">
     <h1 class="font55 fontWeight-300 text-center mb-4 pb-1"><?php the_title(); ?></h1>
 
     <div class="row d-flex justify-content-between">
-      <div class="col-6">
+      <div class="col-lg-6">
 
-        <h2 class="font24 fontWeight-400">Deixe sua mensagem</h2>
+        <h2 class="font24 fontWeight-400 text-center text-sm-start">Deixe sua mensagem</h2>
 
         <?php the_content(); ?>
 
@@ -28,7 +28,7 @@ get_header(); ?>
 
       </div>
 
-      <div class="col-5 colunaContatos">
+      <div class="col-lg-5 colunaContatos">
 
         <div class="mb-5 pb-2">
           <h2 class="font24 mb-3 fontWeight-400">Secretariado e Conformidade</h2>
@@ -171,7 +171,7 @@ get_header(); ?>
   <div class="div-iframe row mb-5">
 
 
-    <div class="col-4">
+    <div class="col-12 col-xl-4 mb-5 mb-xl-0 div-inf-cidades">
       <h1 class="text-white fontWeight-300 font55 mb-5 pb-2">Onde estamos</h1>
 
 
@@ -255,7 +255,7 @@ get_header(); ?>
 
     </div>
 
-    <div class="col-8 d-flex justify-content-end align-items-end p-0">
+    <div class="col-12 col-xl-8 d-flex justify-content-end align-items-end p-0 mt-5 mt-xl-0">
 
       <?php if (get_post_meta($post->ID, 'cidade_estado1', true)) { ?>
         <iframe class="iframe" src="<?php echo $iframe_mapa1 = get_post_meta($post->ID, 'iframe_mapa1', true); ?>" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

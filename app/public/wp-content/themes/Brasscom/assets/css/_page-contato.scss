@@ -72,6 +72,15 @@
         font-size: 24px;
         line-height: 18px;
         color: $azul-escuro;
+
+        @media (max-width: 991.9px) {
+          margin-bottom: 40px;
+        }
+        @media (max-width: 575.9px) {
+          width: 99%;
+          margin: auto;
+          margin-bottom: 40px;
+        }
       }
     }
 
@@ -119,19 +128,50 @@
     }
   }
   .div-iframe {
+    margin: auto;
     min-height: 923px;
     background-color: $azul-escuro;
-    padding: 100px 100px 103px 123px;
+    @media (min-width: 1270px) {
+      padding: 100px 100px 103px 123px;
+    }
+    @media (max-width: 1269px) {
+      padding: 100px 50px 103px 50px;
+    }
+    @media (max-width: 575.9px) {
+      padding: 100px 20px 103px 20px;
+    }
 
     .iframe {
       width: 698px;
       height: 621px;
       filter: drop-shadow(0px 10px 30px rgba(30, 70, 90, 0.25));
       border-radius: 5px;
+
+      @media (max-width: 1199px) {
+        width: 100%;
+      }
+
+      @media (max-width: 767.9px) {
+        height: 500px;
+      }
+
+      @media (max-width: 575.9px) {
+        height: 200px;
+      }
+    }
+
+    .div-inf-cidades {
+      @media (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+      }
     }
 
     .inf-cidade {
-      padding-left: 50px;
+      @media (min-width: 576px) {
+        padding-left: 50px;
+      }
+
       p {
         font-weight: 300;
         font-size: 18px;
@@ -215,6 +255,23 @@
           position: absolute;
           right: 30px;
           top: 32px;
+        }
+      }
+
+      @media (max-width: 767.9px) {
+        width: 55%;
+
+        &.ativo {
+          width: 90%;
+        }
+      }
+      @media (max-width: 575.9px) {
+        width: 80%;
+        font-size: toRem(20);
+
+        &.ativo {
+          width: 98%;
+          font-size: toRem(20);
         }
       }
     }

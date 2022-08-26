@@ -69,6 +69,9 @@
 </footer>
 
 
+<?php echo get_search_form(); ?>
+
+
 <!-- PUXA OS SCRIPTS DO ARQUIVO FUNCTIONS QUE SÃO DO FOOTER -->
 <?php wp_footer(); ?>
 
@@ -197,6 +200,34 @@
     });
   });
 </script> -->
+
+
+<!-- MODAL DE BUSCA -->
+<script>
+  jQuery(document).ready(function() {
+    jQuery(function() {
+      jQuery('#btn_pesquisa').on('click', function() {
+
+        jQuery('.tela-busca').toggleClass('active');
+
+      });
+    });
+  });
+</script>
+
+<script>
+  jQuery(document).ready(function() {
+    jQuery(function() {
+      jQuery('.botao-close-search').on('click', function() {
+
+        jQuery('.tela-busca').toggleClass('active');
+
+      });
+    });
+  });
+</script>
+
+
 
 
 </body>

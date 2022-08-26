@@ -185,15 +185,13 @@
 
         <div class="div-pesq-login1">
 
-
           <!-- abrir modal  (no footer) -->
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="9.07377" cy="9.07377" r="8.07377" stroke="white" stroke-width="2" />
-            <path d="M23 22.918L15 14.918" stroke="white" stroke-width="2" />
-          </svg>
-
-
-
+          <a id="btn_pesquisa" type="button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="9.07377" cy="9.07377" r="8.07377" stroke="white" stroke-width="2" />
+              <path d="M23 22.918L15 14.918" stroke="white" stroke-width="2" />
+            </svg>
+          </a>
 
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="16.0615" cy="12.9721" r="5.46924" stroke="#DDFF15" stroke-width="2" />
@@ -318,5 +316,7 @@
 
       </div>
     </div>
+
+
 
   </header>
